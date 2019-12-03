@@ -34,7 +34,7 @@ Collections.sort(names, (String a, String b) -> {
 案例二:
 Collections.sort(names, (a, b) -> b.compareTo(a));
 ```
-3. FunctionalInterface介绍  
+3. @FunctionalInterface介绍  
       + 给接口添加@FunctionalInterface注解
       + 函数式接口，只能有一个未实现的方法声明
       + 可以有0到多个default和static方法声明
