@@ -2,7 +2,7 @@
 
 # 背景
 
-
+ES索引需要添加一个嵌套对象，所以需要重构Mapping
 
 # 实战经验
 
@@ -16,7 +16,7 @@
 3. 创建修改过后的mapping，并命名为item_index_v2
 
 4. 同步item_index_v1到item_index_v2中
-```
+```json
 POST _reindex
 {
   "source": {
@@ -28,7 +28,7 @@ POST _reindex
 }
 ```
 5. 更新别名
-```
+```json
 POST _aliases
 {
   "actions": [
