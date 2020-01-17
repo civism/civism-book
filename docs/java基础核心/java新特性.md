@@ -40,10 +40,10 @@ Collections.sort(names, (a, b) -> b.compareTo(a));
       + 可以有0到多个default和static方法声明
       + FunctionalInterface本质上还是Interface，声明与使用跟正常接口一样，只是附加了lambda表达式功能  
  **jdk自带常用接口分类**  
-      + 应用(apply)函数(Function)，有进有出	Function<T, R>	R apply(T t)
-      + 接受(accept)消费(Consumer)，只进不出	Consumer<T>	void accept(T t)
-      + 测试(test)谓词(Predicate)，返回真假	Predicate<T>	boolean test(T t)
-      + 获得(get)供给(Supplier)，不劳而获	Supplier<T>	T get()
+      + 应用(apply)函数(Function)，有进有出	**Function<T, R>	R apply(T t)**
+      + 接受(accept)消费(Consumer)，只进不出	**Consumer<T>	void accept(T t)**
+      + 测试(test)谓词(Predicate)，返回真假	**Predicate<T>	boolean test(T t)**
+      + 获得(get)供给(Supplier)，不劳而获	**Supplier<T>	T get()**
 4. Date/Time时间工具类
       + Clock类  
       + LocalDate
